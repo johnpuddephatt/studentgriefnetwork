@@ -1,0 +1,2 @@
+(self.webpackChunksage=self.webpackChunksage||[]).push([[742],{839:function(){document.querySelector(".menu-open").addEventListener("click",(function(){document.querySelector(".nav").classList.remove("translate-x-[100%]")})),document.querySelector(".menu-close").addEventListener("click",(function(){document.querySelector(".nav").classList.add("translate-x-[100%]")}))},255:function(){},88:function(){}},function(e){var n=function(n){return e(e.s=n)};e.O(0,[126,692],(function(){return n(839),n(255),n(88)}));e.O()}]);
+//# sourceMappingURL=app.js.map
