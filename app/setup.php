@@ -42,6 +42,8 @@ add_action('enqueue_block_editor_assets', function () {
     wp_enqueue_style('sage/editor.css', asset('styles/editor.css')->uri(), false, null);
 }, 100);
 
+
+
 /**
  * Register the initial theme setup.
  *
@@ -71,14 +73,15 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Primary Navigation', 'sage'),
+        'footer_navigation' => __('Footer Navigation', 'sage')
     ]);
 
     /**
      * Register the editor color palette.
      * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/#block-color-palettes
      */
-    add_theme_support('editor-color-palette', []);
+    // add_theme_support('editor-color-palette', []);
 
     /**
      * Register the editor color gradient presets.
@@ -90,7 +93,7 @@ add_action('after_setup_theme', function () {
      * Register the editor font sizes.
      * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/#block-font-sizes
      */
-    add_theme_support('editor-font-sizes', []);
+    // add_theme_support('editor-font-sizes', []);
 
     /**
      * Register relative length units in the editor.
@@ -102,7 +105,7 @@ add_action('after_setup_theme', function () {
      * Enable support for custom line heights in the editor.
      * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/#supporting-custom-line-heights
      */
-    add_theme_support('custom-line-height');
+    // add_theme_support('custom-line-height');
 
     /**
      * Enable support for custom block spacing control in the editor.
@@ -120,13 +123,13 @@ add_action('after_setup_theme', function () {
      * Disable custom color gradients in the editor.
      * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/#disabling-custom-gradients
      */
-    add_theme_support('disable-custom-gradients');
+    // add_theme_support('disable-custom-gradients');
 
     /**
      * Disable custom font sizes in the editor.
      * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/#disabling-custom-font-sizes
      */
-    add_theme_support('disable-custom-font-sizes');
+    // add_theme_support('disable-custom-font-sizes');
 
     /**
      * Disable the default block patterns.
@@ -202,3 +205,17 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer'
     ] + $config);
 });
+
+add_image_size( 'tall-xl', 800, 1000, true );
+add_image_size( 'tall-l', 640, 800, true );
+add_image_size( 'tall', 480, 600, true );
+add_image_size( 'tall-s', 320, 400, true );
+
+add_filter( 'image_size_names_choose', function($sizes){
+    return array_merge( $sizes, array(
+        'tall' => __( 'Tall' )
+    ));
+});
+
+add_theme_support( 'post-formats', array( 'video', 'audio' ) );
+

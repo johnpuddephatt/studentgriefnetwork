@@ -1,0 +1,14 @@
+@layer base {
+  @font-face {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    src: url(../fonts/WorkSans-Regular.woff) format('woff'),
+      url(../fonts/WorkSans-Regular.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Kayak Sans';
+    font-weight: 400;
+    src: url(../fonts/KayakSans-Bold.woff) format('woff'),
+      url(../fonts/KayakSans-Bold.woff2) format('woff2');
+  }
+}

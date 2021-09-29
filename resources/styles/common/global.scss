@@ -1,7 +1,140 @@
-body {
-  @apply font-sans;
+@import 'fonts';
+@import 'buttons';
+
+#gradient-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  --gradient-color-1: #795de3;
+  --gradient-color-2: #9bccfa;
+  --gradient-color-3: #3e57b5;
+  --gradient-color-4: #eed891;
+}
+
+html {
+  @apply font-worksans text-gray-700 leading-normal;
 }
 
 .brand {
-  @apply text-3xl font-medium text-indigo-500;
+  @apply text-3xl font-medium text-blue-light;
+}
+
+[hidden] {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.stroke {
+  -webkit-text-stroke: 1.5px;
+}
+
+.path {
+  stroke-dasharray: 2500;
+  stroke-dashoffset: -2500;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 00;
+  }
+}
+
+.footer-logo {
+  word-spacing: 99999px;
+  background: center / contain no-repeat
+    url('data:image/svg+xml;base64,PHN2ZyBpZD0iSXNvbGF0aW9uX01vZGUiIGRhdGEtbmFtZT0iSXNvbGF0aW9uIE1vZGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDQxNC42OCA0NDIuNzgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1taXRlcmxpbWl0OjEwO3N0cm9rZS13aWR0aDo4LjE3cHg7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTUyNi42MSw0MDkyLjI5bDI2LjY3LDM5LTIxLjgyLDQzLjMzcy0yOS4xLDI2LTM0LjUyLDQ1LjQ5LS41LDMyLjQ5LS41LDMyLjQ5bC41LDU3LjA2LTQ4LjgsNTkuNTktMjAuNjEsMTU4LjQtOTIuMjYtMjQuMDYtMjguNzctMzIuODFIMjg2LjkzbC0zLjc5LTEuMjNjLS41OS0uMTktMTQuNjctNC43OC0yOC41My0xMC45LTktNC0xMDMuNjUtMjAuNjktMTA4LjkzLTI0LjM5TTI2My4xNSw0NDI4djBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTQzLjMzIC00MDg5Ljk4KSIvPjwvc3ZnPg==');
+}
+
+.bg-birds {
+  background: center bottom / contain no-repeat url('../images/birds.png');
+}
+.footer-clip {
+  width: 100%;
+  clip-path: polygon(
+    100% 10%,
+    94% 1%,
+    89% 14%,
+    75% 19%,
+    69% 6%,
+    60% 25%,
+    52% 25%,
+    45% 44%,
+    34% 45%,
+    24% 52%,
+    14% 36%,
+    0% 42%,
+    0% 100%,
+    100% 100%
+  );
+}
+
+.has-background {
+  @apply my-32 rounded-3xl shadow-xl p-16 #{!important};
+
+  figure {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.wp-block-quote.is-large p,
+.wp-block-quote.is-style-large p {
+  font-style: normal;
+  margin: 4em 0;
+}
+
+.page-content > #ez-toc-container:last-child {
+  display: none;
+}
+
+.page-content #ez-toc-container {
+  li {
+    padding-left: 0;
+    &::before {
+      content: none;
+    }
+  }
+  ul {
+    list-style-type: none;
+  }
+}
+
+.ez-toc-link {
+  @apply inline-block bg-transparent font-semibold text-blue-dark no-underline px-0 rounded-none border-b border-blue-dark text-2xl py-3 mb-4 #{!important};
+}
+
+ul.wp-block-list > li {
+  list-style-type: none;
+
+  &::before {
+    @apply bg-blue-lighter #{!important};
+    transform: scale(1.5);
+    list-style-type: none;
+  }
+}
+
+.wp-block-gallery {
+  display: block;
+}
+
+.blocks-gallery-grid {
+  list-style-type: none;
+  li {
+    padding-left: 0 !important;
+    &::before {
+      content: none !important;
+    }
+  }
+  .blocks-gallery-item {
+    &:nth-child(2) {
+      margin: 3em 0 4em -4em;
+    }
+  }
 }

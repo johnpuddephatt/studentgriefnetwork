@@ -1,6 +1,29 @@
 @import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @import 'common/global';
 
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+.page-content {
+  & > * {
+    @apply max-w-3xl mx-auto 2xl:max-w-4xl;
+
+    &.alignwide {
+      @apply max-w-6xl 2xl:max-w-7xl;
+    }
+  }
+}
+
+.post-content {
+  > * {
+    @apply max-w-xl ml-auto;
+
+    &.alignwide {
+      @apply max-w-6xl;
+    }
+  }
+
+  blockquote[class^='wp-block-'] {
+    @apply xl:max-w-sm xl:absolute;
+  }
+}

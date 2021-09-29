@@ -1,8 +1,7 @@
-/**
- * External Dependencies
- */
-import 'jquery';
+document.querySelector('.menu-open').addEventListener('click', () => {
+  document.querySelector('.nav').classList.remove('translate-x-[100%]');
+});
 
-$(() => {
-  // console.log('Hello world');
+document.querySelector('.menu-close').addEventListener('click', () => {
+  document.querySelector('.nav').classList.add('translate-x-[100%]');
 });

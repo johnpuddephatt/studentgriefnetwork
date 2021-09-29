@@ -1,11 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import 'common/global';
+
+.editor-styles-wrapper {
+  @apply prose;
+  max-width: none !important;
+}
+
 .block-editor-block-list__layout {
-  @apply font-sans;
+  @apply font-worksans;
 }
 
 .wp-block {
   @apply max-w-screen-md;
 
   &.editor-post-title__block .editor-post-title__input {
-    @apply font-sans #{!important};
+    @apply text-6xl font-kayaksans #{!important};
   }
+}
+
+.wp-block-media-text {
+  img {
+    border-style: none;
+  }
+}
+
+.wp-block.editor-post-title__block .editor-post-title__input {
+  @apply text-blue #{!important};
 }

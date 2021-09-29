@@ -1,3 +1,3 @@
-@php(the_content())
-
-{!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
+<div class="container relative z-10 min-h-screen pb-64 prose 2xl:prose-lg max-w-none page-content">
+    @php(the_content())
+</div>
