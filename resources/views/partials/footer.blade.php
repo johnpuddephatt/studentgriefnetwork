@@ -12,10 +12,10 @@
           </div>
         </div>
         <div class="flex-shrink w-full mt-8 ml-auto lg:mt-6 xl:w-1/6 lg:w-1/4">
-          <p class="sm:mt-3">{!! str_replace("|", "", $siteStrapline) !!}</p>
+          <p class="mb-3 sm:mt-3">{!! str_replace("|", "", $siteStrapline) !!}</p>
 
           @if(get_theme_mod('company_info'))
-          <p class="mt-3 mb-12 text-xs lg:mb-6 company-info">{{ get_theme_mod('company_info') }}</p>
+          <p class="mb-12 text-xs lg:mb-6 company-info">{{ get_theme_mod('company_info') }}</p>
           @endif
 
           <div class="flex justify-center space-x-1 md:justify-start md:space-x-3">
