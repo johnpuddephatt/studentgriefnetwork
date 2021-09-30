@@ -57,6 +57,11 @@ module.exports = {
             },
             h2: {
               color: theme('colors.blue.dark'),
+              fontSize: '2em',
+            },
+            h3: {
+              color: theme('colors.blue.DEFAULT'),
+              fontSize: '1.5em',
             },
             blockquote: {
               borderLeftStyle: 'none',
