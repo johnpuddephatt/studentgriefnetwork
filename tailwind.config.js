@@ -58,10 +58,14 @@ module.exports = {
             h2: {
               color: theme('colors.blue.dark'),
               fontSize: '2em',
+              fontFamily: theme('fontFamily.kayaksans').join(','),
+              fontWeight: 'bold',
             },
             h3: {
               color: theme('colors.blue.DEFAULT'),
               fontSize: '1.5em',
+              fontFamily: theme('fontFamily.kayaksans').join(','),
+              fontWeight: 'bold',
             },
             blockquote: {
               borderLeftStyle: 'none',
