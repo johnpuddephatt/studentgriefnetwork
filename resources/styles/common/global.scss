@@ -85,8 +85,15 @@ html {
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  > *:first-child {
+    margin-top: 0.5em;
+  }
 }
 
+.wp-block-quote {
+  padding: 0 2em;
+}
 .wp-block-quote.is-large p,
 .wp-block-quote.is-style-large p {
   font-style: normal;
