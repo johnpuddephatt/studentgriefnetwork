@@ -22,6 +22,7 @@
     <div class="prose 2xl:prose-lg max-w-none page-content">
         @php(the_content())
     </div>
+
 </div>
 
 @endwhile

@@ -1,9 +1,10 @@
 <footer class="relative">
   <img class="absolute bottom-0 left-0 w-full max-w-none -right-96 " src="@asset('/images/gradient-mesh-2x.png')" />
-  <div class="relative z-10 mx-12 transform border-t translate-y-52 border-blue-light"></div>
-  <div class="relative pt-24 bg-white bg-opacity-50 text-blue footer-clip">
-    <div class="px-12 py-16 pt-32 pb-6 mx-auto">
-      <div class="flex gap-8 text-center md:text-left">
+  <div class="container relative z-10 hidden transform border-t lg:block translate-y-52 border-blue-light">
+  </div>
+  <div class="relative bg-opacity-50 lg:pt-24 text-blue footer-clip bg-blue-lighter lg:bg-white lg:bg-opacity-50 ">
+    <div class="container py-16 pt-48 pb-6 mx-auto lg:pt-32 max-w-none">
+      <div class="flex flex-col gap-16 lg:gap-8 lg:flex-row">
         <div
           class="flex-none flex-grow-0 flex-shrink w-full pt-8 pb-16 pl-6 mr-auto text-3xl font-bold text-center font-kayaksans footer-logo md:w-auto">
           <div class="inline-block w-48 pl-4 text-left stroke">
@@ -14,7 +15,7 @@
           <p class="sm:mt-3">{!! str_replace("|", "", $siteStrapline) !!}</p>
 
           @if(get_theme_mod('company_info'))
-          <p class="mt-3 mb-6 text-xs company-info">{{ get_theme_mod('company_info') }}</p>
+          <p class="mt-3 mb-12 text-xs lg:mb-6 company-info">{{ get_theme_mod('company_info') }}</p>
           @endif
 
           <div class="flex justify-center space-x-1 md:justify-start md:space-x-3">

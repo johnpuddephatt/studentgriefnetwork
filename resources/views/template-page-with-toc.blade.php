@@ -14,20 +14,25 @@
   src="@asset('/images/background-lines.svg')" />
 
 
-<div class="container relative z-10 max-w-3xl mx-auto 2xl:max-w-4xl pt-72">
-  <h1 class="mb-12 text-6xl font-bold xl:text-8xl 2xl:text-9xl font-kayaksans text-blue-dark">{!! get_the_title() !!}
-  </h1>
+<div class="container relative z-10 pb-24 mx-auto pt-72">
+  <div class="max-w-3xl mx-auto 2xl:max-w-4xl">
+    <h1 class="mb-12 text-6xl font-bold xl:text-8xl 2xl:text-9xl font-kayaksans text-blue-dark">{!! get_the_title()
+      !!}
+    </h1>
+    {!! do_shortcode('[toc]') !!}
+  </div>
+</div>
+
+<div class="container relative z-10 min-h-screen pb-64 mx-auto">
+  <div class="prose 2xl:prose-lg max-w-none page-content">
+    @php(the_content())
+  </div>
+
 </div>
 
 
-<div class="container relative z-10 max-w-3xl mx-auto mb-12 2xl:max-w-4xl">
-  {!! do_shortcode('[toc]') !!}
-</div>
 
 
-<div class="container relative z-10 min-h-screen pb-64 prose 2xl:prose-lg max-w-none page-content">
-  @php(the_content())
-</div>
 
 @endwhile
 @endsection

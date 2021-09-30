@@ -28,7 +28,7 @@
     </div>
   </header>
 
-  <div class="w-full prose 2xl:prose-lg post-content max-w-none">
+  <div class="w-full mx-auto prose 2xl:prose-lg post-content max-w-none">
     @php(the_content())
   </div>
 

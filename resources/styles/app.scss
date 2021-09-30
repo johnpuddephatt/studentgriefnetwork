@@ -13,7 +13,7 @@
     }
 
     &.alignwide {
-      @apply max-w-6xl 2xl:max-w-7xl;
+      @apply max-w-7xl;
     }
   }
 }
@@ -23,11 +23,11 @@
     @apply max-w-xl ml-auto;
 
     &.alignwide {
-      @apply max-w-6xl;
+      @apply max-w-7xl;
     }
   }
 
   blockquote[class^='wp-block-'] {
-    @apply xl:max-w-sm xl:absolute;
+    @apply xl:max-w-xs xl:absolute;
   }
 }
