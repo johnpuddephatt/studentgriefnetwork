@@ -52,18 +52,18 @@ module.exports = {
         DEFAULT: {
           css: {
             h1: {
-              fontSize: '4em',
+              fontSize: '4.5em',
               color: theme('colors.blue.DEFAULT'),
             },
             h2: {
               color: theme('colors.blue.dark'),
-              fontSize: '2em',
+              fontSize: '2.5em',
               fontFamily: theme('fontFamily.kayaksans').join(','),
               fontWeight: 'bold',
             },
             h3: {
               color: theme('colors.blue.DEFAULT'),
-              fontSize: '1.5em',
+              fontSize: '1.75em',
               fontFamily: theme('fontFamily.kayaksans').join(','),
               fontWeight: 'bold',
             },
