@@ -79,7 +79,7 @@ html {
 }
 
 .has-background {
-  @apply my-32 rounded-3xl shadow-xl p-16 #{!important};
+  @apply my-32 rounded-3xl shadow-xl px-16 py-8 #{!important};
 
   figure {
     margin-top: 0;
@@ -91,6 +91,7 @@ html {
 .wp-block-quote.is-style-large p {
   font-style: normal;
   margin: 4em 0;
+  line-height: 1.5;
 }
 
 .page-content > #ez-toc-container:last-child {
