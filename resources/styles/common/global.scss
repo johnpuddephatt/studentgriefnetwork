@@ -91,9 +91,10 @@ html {
   }
 }
 
-.wp-block-quote {
+.prose .wp-block-quote {
   padding: 0 2em;
 }
+
 .wp-block-quote.is-large p,
 .wp-block-quote.is-style-large p {
   font-style: normal;

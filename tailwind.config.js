@@ -72,7 +72,7 @@ module.exports = {
               paddingLeft: 0,
               fontStyle: 'normal',
               fontSize: '1.5em',
-              color: theme('colors.blue.light'),
+              color: theme('colors.blue.lighter'),
               fontFamily: theme('fontFamily.kayaksans').join(','),
               fontWeight: 'bold',
             },
