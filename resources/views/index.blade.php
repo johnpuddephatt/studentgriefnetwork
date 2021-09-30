@@ -19,7 +19,7 @@
   <h1 class="pt-6 mb-12 text-6xl font-bold xl:text-8xl 2xl:text-9xl font-kayaksans text-blue-dark">
     {!! get_queried_object()->post_title !!}
   </h1>
-  <div class="flex flex-row gap-8">
+  <div class="flex flex-row gap-4">
     @php(the_post())
     @php($index = 1)
     <div class="flex flex-col flex-none w-1/2 mt-14">
@@ -29,13 +29,13 @@
           'class' => 'w-full h-auto'
           ]) !!}</a>
         <header class="p-6">
-          <h2 class="mb-2 text-lg font-bold font-kayaksans text-blue sm:text-xl md:text-2xl xl:text-3xl">
+          <h2 class="mb-2 text-lg font-bold font-kayaksans text-blue sm:text-xl lg:text-2xl xxl:text-3xl">
             <a href="{{ get_permalink() }}">
               {!! the_title() !!}
             </a>
           </h2>
 
-          <p class="text-sm text-gray-500">{{ the_excerpt() }}</p>
+          <div class="text-gray-500">{{ the_excerpt() }}</div>
           <p class="pt-6 text-xs font-medium text-gray-600">
             <span>{{ get_the_date() }}</span>&nbsp;&nbsp;·&nbsp;&nbsp;<span>{{ App\reading_time() }} read</span>
           </p>
@@ -43,7 +43,7 @@
 
       </article>
     </div>
-    <div class="grid grid-flow-row-dense grid-cols-2 gap-8">
+    <div class="grid grid-flow-row-dense grid-cols-2 gap-4">
       <div class="flex flex-col justify-center col-span-2 row-span-2 pt-4 pb-8 text-lg">
         {!! get_queried_object()->post_content !!}
       </div>

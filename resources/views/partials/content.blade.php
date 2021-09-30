@@ -22,13 +22,13 @@
   </svg>
   @else
   <header class="p-6">
-    <h2 class="mb-2 text-2xl font-bold font-kayaksans text-blue">
+    <h2 class="mb-2 text-xl font-bold 2xl:text-2xl font-kayaksans text-blue">
       <a href="{{ get_permalink() }}">
         {!! $title !!}
       </a>
     </h2>
 
-    <p class="text-sm text-gray-500">{{ the_excerpt() }}</p>
+    <div class="text-sm text-gray-500">{{ the_excerpt() }}</div>
     <p class="pt-6 text-xs font-medium text-gray-500">
       <span>{{ get_the_date() }}</span>&nbsp;&nbsp;·&nbsp;&nbsp;<span>{{ App\reading_time() }} read</span></p>
   </header>

@@ -1,3 +1,6 @@
+<img class="absolute left-0 right-0 z-10 object-cover object-top w-full h-full pointer-events-none -top-96 max-w-none"
+  src="@asset('/images/home-background-lines.svg')" />
+
 <section class="relative flex items-center justify-center w-full h-screen">
   <div class="relative z-10 mt-20 space-y-8">
     <h1 class="max-w-4xl mb-16 text-6xl font-bold leading-tight tracking-wide text-center text-blue font-kayaksans">{!!

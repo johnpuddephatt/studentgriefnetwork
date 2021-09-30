@@ -8,6 +8,10 @@
   & > * {
     @apply max-w-3xl mx-auto 2xl:max-w-4xl;
 
+    .page-template-template-page-left-aligned & {
+      @apply mx-0;
+    }
+
     &.alignwide {
       @apply max-w-6xl 2xl:max-w-7xl;
     }
