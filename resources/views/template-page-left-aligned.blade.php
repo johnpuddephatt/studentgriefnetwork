@@ -1,5 +1,5 @@
 {{--
-  Template Name: Page with table of contents
+  Template Name: Default template (left-aligned)
 --}}
 
 @extends('layouts.app')
