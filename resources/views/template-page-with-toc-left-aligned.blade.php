@@ -15,7 +15,7 @@
 
 
 <div class="container relative z-10 pb-24 mx-auto pt-72">
-  <div class="max-w-3xl mx-auto 2xl:max-w-4xl">
+  <div class="max-w-3xl 2xl:max-w-4xl">
     <h1 class="mb-12 text-6xl font-bold xl:text-8xl 2xl:text-9xl font-kayaksans text-blue-dark">{!! get_the_title()
       !!}
     </h1>
