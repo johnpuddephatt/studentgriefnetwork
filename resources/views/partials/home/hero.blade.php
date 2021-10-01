@@ -2,16 +2,21 @@
   src="@asset('/images/home-background-lines.svg')" />
 
 <section class="relative flex items-center justify-center w-full h-screen">
-  <div class="relative z-10 mt-20 space-y-8">
-    <h1 class="max-w-4xl mb-16 text-6xl font-bold leading-tight tracking-wide text-center text-blue font-kayaksans">{!!
-      str_replace("|", "<br>", $siteStrapline) !!}</h1>
-    @foreach($links as $link)
-    <div class="max-w-sm py-2 mx-auto text-2xl border-b-2 border-white font-kayaksans text-blue"><a
-        class="flex items-center justify-between w-full" href="{{ get_permalink($link->ID) }}"><span>{!!
-          get_the_title($link->ID) !!}</span>
-        <x-icon.arrow /></a>
+  <div class="relative z-10 p-8 mt-20 space-y-8">
+    <h1
+      class="max-w-4xl mb-16 text-4xl font-bold leading-tight tracking-wide text-center lg:text-6xl text-blue font-kayaksans">
+      {!! str_replace("|", "<br>", $siteStrapline) !!}
+    </h1>
+
+    <div class="mx-6 space-y-4">
+      @foreach($links as $link)
+      <div class="max-w-sm py-2 mx-auto text-xl border-b-2 border-white lg:text-2xl font-kayaksans text-blue"><a
+          class="flex items-center justify-between w-full" href="{{ get_permalink($link->ID) }}"><span>{!!
+            get_the_title($link->ID) !!}</span>
+          <x-icon.arrow /></a>
+      </div>
+      @endforeach
     </div>
-    @endforeach
   </div>
 
   <svg style="background-color: hsl(210, 90%, 85%)" viewBox="0 0 800 640" preserveAspectRatio="none"

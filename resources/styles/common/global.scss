@@ -79,7 +79,7 @@ html {
 }
 
 .has-background {
-  @apply my-32 rounded-3xl shadow-xl px-16 py-8 #{!important};
+  @apply my-14 xl:my-28 rounded-3xl shadow-xl px-8 lg:px-16 py-8 #{!important};
 
   figure {
     margin-top: 0;
@@ -92,7 +92,7 @@ html {
 }
 
 .prose .wp-block-quote {
-  padding: 0 2em;
+  @apply px-6 lg:px-12;
 }
 
 .wp-block-quote.is-large p,

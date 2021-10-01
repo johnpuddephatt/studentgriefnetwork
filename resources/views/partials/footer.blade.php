@@ -1,9 +1,10 @@
-<footer class="relative">
-  <img class="absolute bottom-0 left-0 w-full max-w-none -right-96 " src="@asset('/images/gradient-mesh-2x.png')" />
+<footer class="relative text-center lg:text-left">
+  <img class="absolute bottom-0 left-0 w-[200%] lg:w-full max-w-none -right-96 "
+    src="@asset('/images/gradient-mesh-2x.png')" />
   <div class="container relative z-10 hidden transform border-t lg:block translate-y-52 border-blue-light">
   </div>
   <div class="relative bg-opacity-50 lg:pt-24 text-blue footer-clip bg-blue-lighter lg:bg-white lg:bg-opacity-50 ">
-    <div class="container py-16 pt-48 pb-6 mx-auto lg:pt-32 max-w-none">
+    <div class="container py-16 pt-48 mx-auto lg:pb-6 lg:pt-32 max-w-none">
       <div class="flex flex-col gap-16 lg:gap-8 lg:flex-row">
         <div
           class="flex-none flex-grow-0 flex-shrink w-full pt-8 pb-16 pl-6 mr-auto text-3xl font-bold text-center font-kayaksans footer-logo md:w-auto">

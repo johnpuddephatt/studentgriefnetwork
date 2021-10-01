@@ -10,7 +10,7 @@
     src="@asset('/images/background-lines.svg')" />
 
 
-<div class="container relative z-10 mx-auto pt-72">
+<div class="container relative z-10 pt-48 mx-auto lg:pt-72">
     <div class="max-w-3xl mx-auto 2xl:max-w-4xl">
         <h1 class="mb-12 text-6xl font-bold xl:text-8xl 2xl:text-9xl font-kayaksans text-blue-dark">{!! get_the_title()
             !!}
@@ -18,7 +18,7 @@
     </div>
 </div>
 
-<div class="container relative z-10 min-h-screen pb-64 mx-auto">
+<div class="container relative z-10 min-h-screen mx-auto pb:32 lg:pb-64">
     <div class="prose 2xl:prose-lg max-w-none page-content">
         @php(the_content())
     </div>
