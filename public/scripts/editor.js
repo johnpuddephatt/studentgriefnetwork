@@ -1,2 +1,2 @@
-"use strict";(self.webpackChunksage=self.webpackChunksage||[]).push([[804],{709:function(e,n,t){window.wp.editPost;var o=window.wp.domReady,i=t.n(o),u=window.wp.blocks;i()((function(){(0,u.unregisterBlockStyle)("core/button","outline"),(0,u.registerBlockStyle)("core/button",{name:"outline",label:"Outline"})}))}},function(e){var n;n=709,e(e.s=n)}]);
+"use strict";(self.webpackChunksage=self.webpackChunksage||[]).push([[804],{709:function(n,w,s){window.wp.editPost;var e=window.wp.domReady,o=s.n(e);window.wp.blocks;o()((function(){}))}},function(n){var w;w=709,n(n.s=w)}]);
 //# sourceMappingURL=editor.js.map

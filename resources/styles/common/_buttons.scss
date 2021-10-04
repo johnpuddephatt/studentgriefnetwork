@@ -1,3 +1,7 @@
 .wp-block-button__link {
   @apply text-left inline-block bg-transparent font-semibold text-blue-dark no-underline px-0 rounded-none border-b border-blue-dark text-xl lg:text-2xl py-3 #{!important};
+
+  .is-style-outline & {
+    @apply text-base border-2 rounded border-blue-lighter text-blue-lighter px-4 #{!important};
+  }
 }

@@ -22,7 +22,7 @@
       </div>
       @endif
     </div>
-    <div class="w-3/4 mb-12 ml-auto lg:w-1/3 lg: lg:mb-0 mt-flex-none">
+    <div class="flex-none w-3/4 mb-12 lg:ml-auto lg:w-1/3 lg:mb-0">
       {!! get_the_post_thumbnail(null, 'tall' ,[
       'class' => 'w-full h-auto'
       ]) !!}
