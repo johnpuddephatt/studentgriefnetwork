@@ -7,13 +7,13 @@
 <article @php(post_class('relative z-10 container mx-auto max-w-5xl mb-36'))>
   <header
     class="flex flex-col-reverse items-end justify-between w-full pt-24 pb-12 mb-12 space-x-8 border-b lg:flex-row">
-    <div class="">
+    <div class="text-sm lg:text-base">
       <p class="mb-6 font-bold text-blue-lighter">Student Experience
         <time class="text-blue-light" class="updated" datetime="{{ get_post_time('c', true) }}">
           &nbsp; {{ get_the_date() }}
         </time>
       </p>
-      <h1 class="mb-12 text-6xl font-bold entry-title xl:text-7xl font-kayaksans text-blue-dark">
+      <h1 class="mb-12 text-5xl font-bold lg:text-6xl entry-title xl:text-7xl font-kayaksans text-blue-dark">
         {!! $title !!}
       </h1>
       @if($post->post_excerpt)
