@@ -5,7 +5,8 @@
     src="@asset('/images/background-lines.svg')" />
 </div>
 <article @php(post_class('relative z-10 container mx-auto max-w-5xl mb-36'))>
-  <header class="flex flex-row items-end justify-between w-full pt-24 pb-12 mb-12 space-x-8 border-b">
+  <header
+    class="flex flex-col-reverse items-end justify-between w-full pt-24 pb-12 mb-12 space-x-8 border-b lg:flex-row">
     <div class="">
       <p class="mb-6 font-bold text-blue-lighter">Student Experience
         <time class="text-blue-light" class="updated" datetime="{{ get_post_time('c', true) }}">
@@ -21,7 +22,7 @@
       </div>
       @endif
     </div>
-    <div class="flex-none w-1/3 ml-auto">
+    <div class="w-3/4 mb-12 ml-auto lg:w-1/3 lg: lg:mb-0 mt-flex-none">
       {!! get_the_post_thumbnail(null, 'tall' ,[
       'class' => 'w-full h-auto'
       ]) !!}
