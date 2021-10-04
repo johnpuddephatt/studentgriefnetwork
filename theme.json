@@ -11,6 +11,7 @@
       "wideSize": "1100px"
     },
     "color": {
+      "customGradient": false,
       "gradients": [],
       "palette": [
         {
@@ -19,6 +20,14 @@
           "name": "Light purple"
         }
       ]
+    },
+    "blocks": {
+      "core/button": {
+        "color": {
+          "custom": false,
+          "palette": []
+        }
+      }
     }
   }
 }
