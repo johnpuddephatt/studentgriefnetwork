@@ -29,6 +29,6 @@
   }
 
   blockquote[class^='wp-block-'] {
-    @apply xl:max-w-xs xl:absolute;
+    @apply xl:max-w-xs xl:absolute xl:px-0;
   }
 }
