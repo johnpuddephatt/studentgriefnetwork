@@ -6,11 +6,10 @@
 
 .page-content {
   & > * {
-    @apply max-w-3xl mx-auto 2xl:max-w-4xl;
+    @apply max-w-3xl 2xl:max-w-4xl;
 
-    .page-template-template-page-left-aligned &,
-    .page-template-template-page-with-toc-left-aligned & {
-      @apply mx-0;
+    .page-template-template-page-wide & {
+      @apply mx-auto;
     }
 
     &.alignwide {

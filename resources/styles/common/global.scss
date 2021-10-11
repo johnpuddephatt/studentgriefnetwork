@@ -119,7 +119,7 @@ html {
 }
 
 .prose .wp-block-quote {
-  @apply px-6 lg:px-12 mx-auto #{!important};
+  @apply px-6 lg:px-12 #{!important};
 }
 
 .wp-block-quote.is-large p,
