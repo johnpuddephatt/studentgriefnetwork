@@ -4,7 +4,7 @@
   <img class="absolute top-0 left-0 right-0 object-cover object-top w-full h-full pointer-events-none max-w-none"
     src="@asset('/images/background-lines.svg')" />
 </div>
-<article @php(post_class('relative z-10 container mx-auto max-w-5xl mb-36'))>
+<article @php(post_class('relative z-10 container mx-auto max-w-5xl mb-20 lg:mb-40'))>
   <header
     class="flex flex-col-reverse items-end justify-between w-full pb-12 mb-12 space-x-8 border-b lg:pt-24 lg:flex-row">
     <div class="text-sm lg:text-base">

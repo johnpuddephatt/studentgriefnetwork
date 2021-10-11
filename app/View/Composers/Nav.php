@@ -29,7 +29,7 @@ class Nav extends Composer
                     'menu_class' => 'flex flex-col md:flex-row font-kayaksans'
                 ], [
                     'level-0-link' => 'hover:border-white text-xl',
-                    'level-1-link' => 'text-xl'
+                    'level-1-link' => 'text-base text-blue'
                 ]),
             ];
         }

@@ -15,19 +15,19 @@
 {!! get_search_form(false) !!}
 @endif
 
-<div class="container relative z-10 pt-40 mx-auto lg:pt-64 mb-72">
-  <h1 class="pt-6 mb-12 text-6xl font-bold xl:text-8xl 2xl:text-9xl font-kayaksans text-blue-dark">
+<div class="container relative z-10 pt-40 mx-auto mb-40 lg:pt-64">
+  <h1 class="mb-12 text-6xl font-bold xl:text-8xl 2xl:text-9xl font-kayaksans text-blue-dark">
     {!! get_queried_object()->post_title !!}
   </h1>
-  <div class="pb-8 text-lg lg:hidden">
+  <div class="max-w-3xl pb-16 text-xl font-bold leading-relaxed">
     {!! get_queried_object()->post_content !!}
   </div>
-  <div class="flex flex-col gap-4 lg:flex-row">
+  <div class="flex flex-col gap-4 lg:gap-6 lg:flex-row">
     @php(the_post())
     @php($index = 1)
-    <div class="flex flex-col flex-none lg:w-1/2 mt-14">
+    <div class="flex flex-col flex-none lg:w-2/5">
       <article
-        class="col-span-2 row-span-6 mt-auto overflow-hidden bg-white bg-opacity-50 shadow-lg lg:sticky bottom-8">
+        class="col-span-2 row-span-6 mt-auto overflow-hidden bg-white bg-opacity-50 shadow-lg lg:sticky bottom-4">
         <a href="{{ get_permalink() }}">
           {!! get_the_post_thumbnail(null, 'tall',[
           'class' => 'w-full h-auto'
@@ -46,10 +46,10 @@
         </header>
       </article>
     </div>
-    <div class="grid grid-flow-row-dense gap-4 lg:grid-cols-2">
-      <div class="flex-col justify-center hidden col-span-2 row-span-2 pt-4 pb-8 text-lg lg:flex">
+    <div class="grid grid-flow-row-dense gap-4 lg:gap-6 lg:grid-cols-2">
+      {{-- <div class="flex-col justify-center hidden col-span-2 row-span-2 pt-4 pb-8 text-lg lg:flex">
         {!! get_queried_object()->post_content !!}
-      </div>
+      </div> --}}
 
       @while(have_posts()) @php(the_post())
       @php($index++)

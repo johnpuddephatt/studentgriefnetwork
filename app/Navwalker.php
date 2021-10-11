@@ -19,7 +19,7 @@ class Navwalker extends \Walker_Nav_Menu {
     }
     function start_lvl( &$output, $depth = 0, $args = array() ) {
         $indent = str_repeat("\t", $depth);
-        $output .= "<ul class='absolute right-0 z-20 hidden w-64 overflow-hidden text-gray-700 shadow-lg md:group-hover:block'>";
+        $output .= "<ul class='absolute right-0 z-20 hidden w-64 overflow-hidden text-gray-700 bg-white shadow-lg md:group-hover:block'>";
         // $output .= "\n$indent<ul>\n";
         // $output .= "</div>";
         // $output .= "</dropdown-link>";
