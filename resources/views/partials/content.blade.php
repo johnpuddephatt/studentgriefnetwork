@@ -1,5 +1,5 @@
 <article
-  class="bg-white flex flex-col bg-opacity-40 shadow-lg relative overflow-hidden @if($index % 3 == 0) row-span-2 col-span-2 @else row-span-3 col-span-1 @endif">
+  class="bg-white flex flex-col bg-opacity-40 shadow-lg relative overflow-hidden @if(($index - 1)% 3 == 0) row-span-2 col-span-2 @else row-span-3 col-span-1 @endif">
   <a class="relative" href="{{ get_permalink() }}">
     {!! get_the_post_thumbnail(null, (($index - 1) % 3 == 0) ? 'thumbnail' : 'tall',[
     'class' => 'w-full h-auto'
