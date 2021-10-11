@@ -17,7 +17,7 @@
         {!! $title !!}
       </h1>
       @if($post->post_excerpt)
-      <div class="mt-16 text-lg font-semibold">
+      <div class="mt-16 text-xl font-bold">
         {!! $post->post_excerpt !!}
       </div>
       @endif
