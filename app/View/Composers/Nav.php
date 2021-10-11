@@ -37,9 +37,15 @@ class Nav extends Composer
             return [
                 'footerNavigation' => $this->navigation('footer_navigation', [
                     'depth' => 1,
-                    'menu_class' => 'flex flex-col lowercase'
+                    'menu_class' => 'flex flex-col lowercase col'
                 ], [
-                    'level-0-link' => 'my-0 hover:border-sky'
+                    'level-0-link' => 'text-blue-light font-semibold my-0 hover:border-sky'
+                ]),
+                'footerNavigation2' => $this->navigation('footer_navigation_2', [
+                    'depth' => 1,
+                    'menu_class' => 'flex flex-col lowercase col'
+                ], [
+                    'level-0-link' => 'text-blue-light font-semibold  my-0 hover:border-sky'
                 ])
             ];
         }
