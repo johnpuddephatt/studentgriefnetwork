@@ -12,14 +12,14 @@
 
 <header
     class=" min-h-[20em] container relative z-10 flex flex-row items-end pt-24 mx-auto mb-16 lg:space-x-16 xl:space-x-24  lg:pt-40">
-    <div class="max-w-2xl">
+    <div class="max-x-2xl">
         <h1 class="mb-16 text-5xl font-bold font-kayaksans text-blue-dark lg:text-6xl xl:text-7xl">{!!
             get_the_title()
             !!}
         </h1>
         <div class="text-xl font-bold">{{ get_post()->post_excerpt }}</div>
     </div>
-    <div>
+    <div class="flex-none w-3/4 mb-12 lg:ml-auto lg:w-1/3 lg:mb-0">
         {!! get_the_post_thumbnail(null, 'tall' ,[
         'class' => 'w-full h-auto'
         ]) !!}

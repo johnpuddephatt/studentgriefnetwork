@@ -2,7 +2,7 @@
   src="@asset('/images/home-background-lines.svg')" />
 
 <section class="relative flex items-center justify-center w-full h-screen">
-  <div class="relative z-10 p-8 mt-20 space-y-8">
+  <div class="relative z-10 p-8 mt-24 space-y-8">
     <h1
       class="max-w-5xl mb-16 text-5xl font-bold leading-tight tracking-wide text-center lg:text-6xl xl:text-7xl text-blue font-kayaksans">
       {!! str_replace("|", "<br>", $siteStrapline) !!}
