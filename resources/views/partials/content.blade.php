@@ -33,5 +33,4 @@
     <p class="pt-6 mt-auto text-xs font-medium text-gray-500">
       <span>{{ get_the_date() }}</span>&nbsp;&nbsp;·&nbsp;&nbsp;<span>{{ App\reading_time() }} read</span></p>
   </header>
-  @endif
 </article>
