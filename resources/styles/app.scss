@@ -11,10 +11,15 @@
     .page-template-template-page-wide & {
       @apply mx-auto;
     }
-
     &.alignwide {
       @apply max-w-6xl;
     }
+  }
+  .page-template-template-page-birds & {
+    background-image: url(../images/birds-purple.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50% auto;
   }
 }
 
