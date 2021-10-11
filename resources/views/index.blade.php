@@ -16,7 +16,7 @@
 @endif
 
 <div class="container relative z-10 pt-40 mx-auto mb-40 lg:pt-64">
-  <h1 class="mb-12 text-6xl font-bold xl:text-8xl 2xl:text-9xl font-kayaksans text-blue-dark">
+  <h1 class="mb-12 text-5xl font-bold lg:text-6xl xl:text-7xl font-kayaksans text-blue-dark">
     {!! get_queried_object()->post_title !!}
   </h1>
   <div class="max-w-3xl pb-16 text-xl font-bold leading-relaxed">
