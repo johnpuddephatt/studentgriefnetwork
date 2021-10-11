@@ -5,7 +5,7 @@
 
 <article @php(post_class('relative z-10 container mx-auto max-w-7xl mb-20 lg:mb-40'))>
   <header
-    class="flex flex-col-reverse items-end justify-between w-full pt-24 pb-12 mb-12 border-b lg:space-x-16 xl:space-x-24 lg:pt-40 lg:flex-row">
+    class="flex flex-col-reverse items-end justify-between w-full pt-32 pb-12 mb-12 border-b lg:space-x-16 xl:space-x-24 lg:pt-40 lg:flex-row">
     <div class="max-x-2xl">
       <p class="mb-6 text-sm font-bold lg:text-base text-blue-lighter">Student Experience
         <time class="text-blue-light" class="updated" datetime="{{ get_post_time('c', true) }}">
