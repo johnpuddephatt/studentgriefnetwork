@@ -4,8 +4,8 @@ import { unregisterBlockStyle, registerBlockStyle } from '@wordpress/blocks';
 
 domReady(() => {
   // unregisterBlockStyle('core/button', 'outline');
-  // registerBlockStyle('core/button', {
-  //   name: 'outline',
-  //   label: 'Outline',
-  // });
+  registerBlockStyle('core/group', {
+    name: 'with-birds',
+    label: 'With birds',
+  });
 });

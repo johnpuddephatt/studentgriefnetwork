@@ -52,6 +52,23 @@ html {
     url('data:image/svg+xml;base64,PHN2ZyBpZD0iSXNvbGF0aW9uX01vZGUiIGRhdGEtbmFtZT0iSXNvbGF0aW9uIE1vZGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDQxNC42OCA0NDIuNzgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1taXRlcmxpbWl0OjEwO3N0cm9rZS13aWR0aDo4LjE3cHg7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTUyNi42MSw0MDkyLjI5bDI2LjY3LDM5LTIxLjgyLDQzLjMzcy0yOS4xLDI2LTM0LjUyLDQ1LjQ5LS41LDMyLjQ5LS41LDMyLjQ5bC41LDU3LjA2LTQ4LjgsNTkuNTktMjAuNjEsMTU4LjQtOTIuMjYtMjQuMDYtMjguNzctMzIuODFIMjg2LjkzbC0zLjc5LTEuMjNjLS41OS0uMTktMTQuNjctNC43OC0yOC41My0xMC45LTktNC0xMDMuNjUtMjAuNjktMTA4LjkzLTI0LjM5TTI2My4xNSw0NDI4djBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTQzLjMzIC00MDg5Ljk4KSIvPjwvc3ZnPg==');
 }
 
+.wp-block-group.is-style-with-birds {
+  @apply lg:pr-48 relative #{!important};
+
+  &::after {
+    background-image: url(../images/bird_box.png);
+    background-size: contain;
+    background-position: top right;
+    content: '';
+    display: block;
+    height: 12em;
+    width: 12em;
+    position: absolute;
+    top: -3em;
+    right: 0;
+  }
+}
+
 .bg-birds {
   background: center bottom / contain no-repeat url('../images/birds.png');
 }
@@ -91,8 +108,18 @@ html {
   }
 }
 
+.wp-block-columns {
+  margin: 2em 0;
+}
+
+.wp-block-column {
+  > *:first-child {
+    margin-top: 0;
+  }
+}
+
 .prose .wp-block-quote {
-  @apply px-6 lg:px-12;
+  @apply px-6 lg:px-12 mx-auto #{!important};
 }
 
 .wp-block-quote.is-large p,
@@ -138,6 +165,8 @@ ul.wp-block-list > li {
 
 .blocks-gallery-grid {
   list-style-type: none;
+  padding: 0 4em;
+
   li {
     padding-left: 0 !important;
     &::before {

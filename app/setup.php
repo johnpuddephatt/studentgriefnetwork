@@ -206,10 +206,10 @@ add_action('widgets_init', function () {
     ] + $config);
 });
 
-add_image_size( 'tall-xl', 800, 1000, true );
-add_image_size( 'tall-l', 640, 800, true );
-add_image_size( 'tall', 480, 600, true );
-add_image_size( 'tall-s', 320, 400, true );
+add_image_size( 'tall-xl', 800, 960, true );
+add_image_size( 'tall-l', 768, 800, true );
+add_image_size( 'tall', 480, 576, true );
+add_image_size( 'tall-s', 320, 384, true );
 
 add_filter( 'image_size_names_choose', function($sizes){
     return array_merge( $sizes, array(
@@ -218,4 +218,4 @@ add_filter( 'image_size_names_choose', function($sizes){
 });
 
 add_theme_support( 'post-formats', array( 'video', 'audio' ) );
-
+add_post_type_support( 'page', 'excerpt' );

@@ -1,2 +1,2 @@
-"use strict";(self.webpackChunksage=self.webpackChunksage||[]).push([[804],{709:function(n,w,s){window.wp.editPost;var e=window.wp.domReady,o=s.n(e);window.wp.blocks;o()((function(){}))}},function(n){var w;w=709,n(n.s=w)}]);
+"use strict";(self.webpackChunksage=self.webpackChunksage||[]).push([[804],{709:function(e,i,n){window.wp.editPost;var s=window.wp.domReady,o=n.n(s),w=window.wp.blocks;o()((function(){(0,w.registerBlockStyle)("core/group",{name:"with-birds",label:"With birds"})}))}},function(e){var i;i=709,e(e.s=i)}]);
 //# sourceMappingURL=editor.js.map
