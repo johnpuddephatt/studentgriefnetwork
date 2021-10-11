@@ -12,7 +12,8 @@
 
 <header class=" min-h-[20em] container relative z-10 flex flex-row items-end pt-24 mx-auto mb-16 space-x-16 lg:pt-40">
     <div class="max-w-3xl 2xl:max-w-4xl">
-        <h1 class="mb-16 text-6xl font-bold xl:text-8xl 2xl:text-9xl font-kayaksans text-blue-dark">{!! get_the_title()
+        <h1 class="mb-16 text-5xl font-bold font-kayaksans text-blue-dark lg:text-6xl xl:text-7xl">{!!
+            get_the_title()
             !!}
         </h1>
         <div class="text-xl font-bold">{{ get_post()->post_excerpt }}</div>
