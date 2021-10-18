@@ -8,4 +8,9 @@ domReady(() => {
     name: 'with-birds',
     label: 'With birds',
   });
+
+  registerBlockStyle('core/list', {
+    name: 'pills',
+    label: 'Pills',
+  });
 });
