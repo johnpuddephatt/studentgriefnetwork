@@ -13,4 +13,9 @@ domReady(() => {
     name: 'pills',
     label: 'Pills',
   });
+
+  registerBlockStyle('core/gallery', {
+    name: 'overlapping',
+    label: 'Overlapping',
+  });
 });

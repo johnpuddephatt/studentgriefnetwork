@@ -211,9 +211,20 @@ add_image_size( 'tall-l', 768, 800, true );
 add_image_size( 'tall', 480, 576, true );
 add_image_size( 'tall-s', 320, 384, true );
 
+add_image_size( 'square-xl', 800, 800, true );
+add_image_size( 'square-l', 768, 768, true );
+add_image_size( 'square', 480, 480, true );
+add_image_size( 'square-s', 320, 320, true );
+
 add_filter( 'image_size_names_choose', function($sizes){
     return array_merge( $sizes, array(
         'tall' => __( 'Tall' )
+    ));
+});
+
+add_filter( 'image_size_names_choose', function($sizes){
+    return array_merge( $sizes, array(
+        'square' => __( 'Square' )
     ));
 });
 
