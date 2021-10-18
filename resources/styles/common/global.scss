@@ -130,6 +130,21 @@ html {
   line-height: 1.5;
 }
 
+ul.is-style-pills {
+  @apply mt-8 grid grid-cols-1 lg:grid-cols-2 gap-4;
+
+  li {
+    @apply bg-blue-lighter m-0 list-none bg-opacity-25 p-4 rounded-lg;
+  }
+}
+
+.alignwide,
+.alignfull {
+  ul.is-style-pills {
+    @apply xl:grid-cols-3;
+  }
+}
+
 .page-content > #ez-toc-container:last-child {
   display: none;
 }
