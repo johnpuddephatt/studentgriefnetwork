@@ -125,9 +125,7 @@ html {
 
 .wp-block-quote.is-large p,
 .wp-block-quote.is-style-large p {
-  font-style: normal;
-  margin: 4em 0;
-  line-height: 1.5;
+  @apply mx-0 my-16 leading-snug font-normal text-xl 2xl:text-2xl;
 }
 
 ul.is-style-pills {
