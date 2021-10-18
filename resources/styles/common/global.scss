@@ -137,7 +137,7 @@ ul.is-style-pills {
     @apply bg-blue-lighter m-0 list-none bg-opacity-25 p-4 rounded-lg text-center;
 
     &::before {
-      content: none;
+      content: none !important;
     }
   }
 }
