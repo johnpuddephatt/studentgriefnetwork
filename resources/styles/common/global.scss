@@ -179,21 +179,24 @@ ul.wp-block-list > li {
 
 .wp-block-gallery {
   display: block;
-}
 
-.blocks-gallery-grid.is-style-overlapping {
-  list-style-type: none;
-  padding: 0 4em;
-
-  li {
-    padding-left: 0 !important;
-    &::before {
-      content: none !important;
+  &.is-style-overlapping {
+    .blocks-gallery-grid .blocks-gallery-item {
+      &:nth-child(2) {
+        margin: 3em 0 4em -4em;
+      }
     }
   }
-  .blocks-gallery-item {
-    &:nth-child(2) {
-      margin: 3em 0 4em -4em;
+
+  .blocks-gallery-grid {
+    list-style-type: none;
+    padding: 0 4em;
+
+    li {
+      padding-left: 0 !important;
+      &::before {
+        content: none !important;
+      }
     }
   }
 }
