@@ -1,26 +1,30 @@
-<img class="absolute left-0 right-0 z-10 object-cover object-top w-full h-full pointer-events-none -top-96 max-w-none"
-  src="@asset('/images/home-background-lines.svg')" />
+{{-- <img
+  class="absolute left-0 right-0 z-10 object-cover object-top w-full h-full pointer-events-none -top-96 max-w-none"
+  src="@asset('/images/home-background-lines.svg')" /> --}}
 
-<section class="relative flex items-center justify-center w-full h-screen">
-  <div class="relative z-10 p-8 mt-24 space-y-8">
+<section class="relative h-[110vh]">
+  <div class="container relative z-10 flex flex-col justify-center h-screen space-y-8">
     <h1
-      class="max-w-5xl mb-16 text-5xl font-bold leading-tight tracking-wide text-center lg:text-6xl xl:text-7xl text-blue font-kayaksans">
+      class="max-w-5xl mt-12 mb-6 text-4xl font-bold leading-tight tracking-wide lg:text-5xl xl:text-6xl 2xl:text-7xl text-blue-dark font-kayaksans">
       {!! str_replace("|", "<br>", $siteStrapline) !!}
     </h1>
 
-    <div class="mx-6 space-y-4">
+    <div class="space-y-4">
       @foreach($links as $link)
-      <div class="max-w-sm py-2 mx-auto text-xl border-b-2 border-white lg:text-2xl font-kayaksans text-blue"><a
+      <div class="max-w-sm py-2 text-xl border-b-2 border-white lg:text-2xl font-kayaksans text-blue"><a
           class="flex items-center justify-between w-full" href="{{ get_permalink($link->ID) }}"><span>{!!
             get_the_title($link->ID) !!}</span>
-          <x-icon.arrow /></a>
+          <x-icon.arrow />
+        </a>
       </div>
       @endforeach
     </div>
   </div>
 
+  <img class="absolute z-40 h-auto w-96 top-1/3 left-[57.5%]" src="@asset('/images/birds-2.png')" />
+
   <svg style="background-color: hsl(210, 90%, 85%)" viewBox="0 0 800 640" preserveAspectRatio="none"
-    class="absolute inset-0 w-full h-full">
+    class="absolute inset-0 w-full h-[105vh]">
     <!-- BLUE -->
     <!-- <radialGradient cx="55%" cy="150%" r="150%" id="gradient4" gradientUnits="userSpaceOnUse">
        <animateTransform attributeName="gradientTransform" type="skewX" values="0;25;0" dur="20s" repeatCount="indefinite" />
@@ -111,14 +115,19 @@
     <rect x="0" y="0" width="800" height="640" fill="url(#gradient3)" transform="scaleY(200%)">
     </rect>
 
-    {{-- <path fill="none" stroke-width="3" stroke="white" class="path"
-      d="M1630.62-406.5,1345.85,18.86l-9,70.75-102.1,139.52-1.28,2.75a541.77,541.77,0,0,1-32.24,58.44c-16.7,26-41.23,59.19-73.34,71.76a108.06,108.06,0,0,0,0,14.19,103.74,103.74,0,0,0,2.77,18.35c12.61,6.89,25.71,21,32.5,49.53,3.36,14.1,5.37,31.66,6.16,53.68,1.21,33.84-1,66.86-1.08,68.25l-.61,8.86-16.54,40.33,45,87.74L1169,914,816.88,819.18l-167.17,48.9L529.59,817.6s-23.29-21.41-69.07-27.13-125.3,31.71-125.3,31.71l-110,7.42L165.4,740.84,10.08,852.25M1130.41,408.77h0Z"
-      style="transform: scale(0.8) translate(-350px, -160px)" />
-    <path fill="none" stroke-width="3" stroke="white"
-      d="M1630.62-406.5,1345.85,18.86l-9,70.75-102.1,139.52-1.28,2.75a541.77,541.77,0,0,1-32.24,58.44c-16.7,26-41.23,59.19-73.34,71.76a108.06,108.06,0,0,0,0,14.19,103.74,103.74,0,0,0,2.77,18.35c12.61,6.89,25.71,21,32.5,49.53,3.36,14.1,5.37,31.66,6.16,53.68,1.21,33.84-1,66.86-1.08,68.25l-.61,8.86-16.54,40.33,45,87.74L1169,914,816.88,819.18l-167.17,48.9L529.59,817.6s-23.29-21.41-69.07-27.13-125.3,31.71-125.3,31.71l-110,7.42L165.4,740.84,10.08,852.25M1130.41,408.77h0Z"
-      style="opacity: 0.5; transform: scale(0.8) translate(-350px, -160px)" /> --}}
-
   </svg>
 
+  <svg class="pointer-events-none absolute bottom-0 min-w-[1024px] right-0 w-full parallax-child height-auto"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2516.84 1800">
+    <path fill="#ffffff"
+      d="M2444.62,48l-32.75,69.25L2358,236.85c-10.55,11.17-28.62,31-47.72,55l-82.7,291.89,1.45,185L2065.73,992l-62.62,538.58-211.47-61.68-105.17-134.23-89.79-.41-174.27-107.1-3-29.31L1286,1126.21l-73,85.25-166.56,8.2-244.57,66L698.35,1255.2.83,1410.1V2033h2516V0Z"
+      transform="translate(-0.61 -2.31)" />
+  </svg>
 
+  <svg class="pointer-events-none absolute bottom-0 min-w-[1024px] right-0 w-full parallax-child-2 height-auto"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2516.84 2033">
+    <path fill="none" stroke="#7f86f2" stroke-width="2px"
+      d="M2516.83,13.72l-63.18,54.59L2474,185.77l-49.54,169.3s-97.73,97.72-115.94,171-1.67,122.15-1.67,122.15l1.67,214.48-163.88,224-69.24,595.46-309.83-90.36L1668.9,1468.5h-65.73l-12.71-4.62c-2-.72-49.3-18-95.83-41-30.27-15-53.61-29-71.35-42.92-35.86-28.14-48.1-56.93-50.51-80.44a163.22,163.22,0,0,0-43.78-24.59c-35.92,41.06-96.23,57.69-142.09,66.86a749,749,0,0,1-100,12.6l-4.56.22L829.27,1423l-103.83-30.54L.83,1553.3m1522.49-245.53v0Z"
+      transform="translate(-0.61 -2.31)" />
+  </svg>
 </section>

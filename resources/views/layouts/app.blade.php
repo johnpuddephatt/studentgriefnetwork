@@ -11,7 +11,7 @@
   {{ __('Skip to content') }}
 </a>
 
-<div class="relative">
+<div class="relative parallax-container">
   @include('partials.header')
 
   <main id="main" class="min-h-screen">

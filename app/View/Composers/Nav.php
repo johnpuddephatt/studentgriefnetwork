@@ -28,7 +28,7 @@ class Nav extends Composer
                 'primaryNavigation' => $this->navigation('primary_navigation', [
                     'menu_class' => 'flex flex-col md:flex-row font-kayaksans'
                 ], [
-                    'level-0-link' => 'hover:border-white text-xl',
+                    'level-0-link' => 'hover:border-white text-xl text-blue',
                     'level-1-link' => 'text-base text-blue'
                 ]),
             ];
@@ -39,13 +39,13 @@ class Nav extends Composer
                     'depth' => 1,
                     'menu_class' => 'flex flex-col lowercase col'
                 ], [
-                    'level-0-link' => 'text-blue-light font-semibold my-0 hover:border-sky'
+                    'level-0-link' => 'text-blue font-semibold my-0 hover:border-sky'
                 ]),
                 'footerNavigation2' => $this->navigation('footer_navigation_2', [
                     'depth' => 1,
                     'menu_class' => 'flex flex-col lowercase col'
                 ], [
-                    'level-0-link' => 'text-blue-light font-semibold  my-0 hover:border-sky'
+                    'level-0-link' => 'text-blue font-semibold  my-0 hover:border-sky'
                 ])
             ];
         }

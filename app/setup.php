@@ -230,3 +230,4 @@ add_filter( 'image_size_names_choose', function($sizes){
 
 add_theme_support( 'post-formats', array( 'video', 'audio' ) );
 add_post_type_support( 'page', 'excerpt' );
+

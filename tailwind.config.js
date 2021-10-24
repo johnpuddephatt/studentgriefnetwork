@@ -28,8 +28,8 @@ module.exports = {
       white: '#FFFFFF',
       transparent: '#FFFFFF00',
       blue: {
-        dark: '#20315B',
-        DEFAULT: '#314277',
+        dark: '#314277',
+        DEFAULT: '#4C598E',
         light: '#597096',
         lighter: '#7F87F3',
         lightest: '#9BBCF2',
@@ -84,5 +84,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
+  plugins: [require('@tailwindcss/typography')],
 };

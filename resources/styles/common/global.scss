@@ -198,5 +198,9 @@ ul.wp-block-list > li {
         content: none !important;
       }
     }
+
+    .blocks-gallery-item {
+      flex-grow: 0;
+    }
   }
 }

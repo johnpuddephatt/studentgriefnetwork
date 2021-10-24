@@ -1,6 +1,6 @@
 <header class="absolute top-0 left-0 z-20 w-full bg-transparent">
   <div class="container flex flex-row w-full py-10 mx-auto max-w-none lg:items-center">
-    <a href="{{ home_url('/') }}" class="flex-none text-2xl font-bold lg:text-3xl text-blue-dark stroke font-kayaksans">
+    <a href="{{ home_url('/') }}" class="flex-none text-2xl font-bold lg:text-3xl text-blue stroke font-kayaksans">
       {{ $siteName }}
     </a>
 
