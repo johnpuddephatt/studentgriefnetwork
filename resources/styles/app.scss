@@ -11,7 +11,7 @@
 @media screen and (min-width: 940px) {
   #app {
     width: 100%;
-    height: 100vh;
+    max-height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
     perspective: 1px;
