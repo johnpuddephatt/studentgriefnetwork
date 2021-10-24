@@ -28,7 +28,7 @@ class Nav extends Composer
                 'primaryNavigation' => $this->navigation('primary_navigation', [
                     'menu_class' => 'flex flex-col md:flex-row font-kayaksans'
                 ], [
-                    'level-0-link' => 'hover:border-white text-xl text-blue',
+                    'level-0-link' => 'hover:border-white text-lg 2xl:text-lg text-blue',
                     'level-1-link' => 'text-base text-blue'
                 ]),
             ];
