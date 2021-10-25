@@ -4,6 +4,18 @@
 
 @import 'common/global';
 
+.torn-corner-1 {
+  clip-path: url(#torn-corner-1);
+}
+
+.torn-corner-2 {
+  clip-path: url(#torn-corner-2);
+}
+
+.torn-corner-3 {
+  clip-path: url(#torn-corner-3);
+}
+
 @media screen and (min-width: 940px) {
   #app * {
     transform-style: preserve-3d;

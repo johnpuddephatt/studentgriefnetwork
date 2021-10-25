@@ -1,7 +1,13 @@
 <svg hidden>
-  <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox">
+  <clipPath id="torn-corner-1" clipPathUnits="objectBoundingBox">
+    <path d="M0.443,0,0.367,0.022 L0.327,0.084,0.231,0.115 H0.159 L0.101,0.186,0,0.259 V1 H1 V0 H0.465"></path>
+  </clipPath>
+  <clipPath id="torn-corner-2" clipPathUnits="objectBoundingBox">
+    <path d="M0.557,1 L0.633,0.978,0.673,0.916,0.769,0.885 H0.841 L0.899,0.814,1,0.741 V0 H0 V1 H1"></path>
+  </clipPath>
+  <clipPath id="torn-corner-3" clipPathUnits="objectBoundingBox">
     <path
-      d="M0.614,0.168 l0.079,-0.131,0.091,0.127,0.126,-0.05 L0.957,0,0.997,0.053 V1 H-0.003 V0.371 l0.167,-0.083 L0.331,0.497 l0.051,-0.06,0.115,-0.048,0.021,-0.169 m-0.107,0.121,0,0">
+      d="M0,0 V1 H0.021 L0.043,1,0.162,0.953,0.246,0.952,0.293,0.883,0.363,0.878,0.425,0.832,0.487,0.741,0.456,0.874,0.419,0.906,0.42,0.966,0.487,1 H1 V0">
     </path>
   </clipPath>
 </svg>

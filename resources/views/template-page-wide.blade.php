@@ -1,5 +1,5 @@
 {{--
-  Template Name: Wide template
+Template Name: Wide template
 --}}
 
 @extends('layouts.app')
@@ -25,7 +25,7 @@
   </div>
   <div class="flex-none w-3/4 mb-12 lg:ml-auto lg:w-1/3 lg:mb-0">
     {!! get_the_post_thumbnail(null, 'tall' ,[
-    'class' => 'w-full h-auto'
+    'class' => 'w-full h-auto torn-corner-' . (get_post()->ID % 3 + 1)
     ]) !!}
   </div>
 </header>
