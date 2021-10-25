@@ -18,3 +18,7 @@ add_filter('excerpt_more', function () {
 add_filter('excerpt_length', function($length) {
     return 16;
 });
+
+add_filter('body_class', function($classes) {
+    return array_merge($classes, ['overflow-hidden w-screen']);
+});
