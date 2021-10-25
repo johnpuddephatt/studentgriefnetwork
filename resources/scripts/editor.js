@@ -23,4 +23,9 @@ domReady(() => {
     name: 'overlapping',
     label: 'Overlapping',
   });
+
+  registerBlockStyle('core/media-text', {
+    name: 'no-margin',
+    label: 'No margin',
+  });
 });

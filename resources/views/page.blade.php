@@ -10,7 +10,7 @@
     src="@asset('/images/background-lines.svg')" />
 
 <header
-    class=" min-h-[20em] container relative z-10 flex lg:flex-row flex-col-reverse items-end pt-32 mx-auto mb-16 lg:space-x-16 xl:space-x-24  lg:pt-40">
+    class=" min-h-[20em] container relative z-10 flex lg:flex-row flex-col-reverse items-end pt-32 mx-auto mb-8 lg:space-x-16 xl:space-x-24  lg:pt-40">
     <div class="max-x-2xl">
         <h1 class="mb-16 text-5xl font-bold font-kayaksans text-blue-dark lg:text-5xl xl:text-6xl 2xl:text-7xl">{!!
             get_the_title()

@@ -202,16 +202,19 @@ ul.wp-block-list > li {
   display: block;
 
   &.is-style-overlapping {
-    .blocks-gallery-grid .blocks-gallery-item {
-      &:nth-child(2) {
-        margin: 3em 0 4em -4em;
+    .blocks-gallery-grid {
+      padding: 0 4em;
+      .blocks-gallery-item {
+        &:nth-child(2) {
+          margin: 3em 0 4em -4em;
+        }
       }
     }
   }
 
   .blocks-gallery-grid {
+    padding: 0 !important;
     list-style-type: none;
-    padding: 0 4em;
 
     li {
       padding-left: 0 !important;
