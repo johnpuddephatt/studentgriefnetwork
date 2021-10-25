@@ -79,6 +79,12 @@ html {
     background-image: url(../images/Meditation_White.png);
     content: '';
   }
+
+  &::before {
+    @apply w-60 h-60 -top-24 bg-center bg-contain bg-no-repeat -left-24 block absolute #{!important};
+    background-image: url(../images/bird-single.png);
+    content: '';
+  }
 }
 
 .bg-birds {
