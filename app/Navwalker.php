@@ -19,7 +19,7 @@ class Navwalker extends \Walker_Nav_Menu {
     }
     function start_lvl( &$output, $depth = 0, $args = array() ) {
         $indent = str_repeat("\t", $depth);
-        $output .= "<ul class='z-20 overflow-hidden text-gray-700 bg-white shadow-lg lg:absolute lg:right-0 lg:hidden w-72 md:group-hover:block'>";
+        $output .= "<ul class='z-20 hidden pl-4 overflow-hidden text-gray-700 bg-white border-l-4 border-blue-lightest lg:border-none lg:pl-0 lg:shadow-lg lg:absolute lg:right-0 w-72 md:group-hover:block'>";
         // $output .= "\n$indent<ul>\n";
         // $output .= "</div>";
         // $output .= "</dropdown-link>";
@@ -48,11 +48,14 @@ class Navwalker extends \Walker_Nav_Menu {
         $atts['rel']    = ! empty( $item->xfn )        ? $item->xfn        : '';
         $atts['href']   = ! empty( $item->url )        ? $item->url        : '';
         if($depth == 0) {
-            $atts['class']  = 'inline-flex py-2 px-1 md:px-2 my-1 mx-2 xl:mx-4 border-b-2 border-transparent items-center';
+            $atts['class']  = 'inline-flex py-2 px-1 md:px-2 my-1 mx-1 lg:mx-2 xl:mx-4 border-b-2 border-transparent items-center';
             $atts['class']  .= isset($this->styles['level-0-link']) ? ' ' . $this->styles['level-0-link'] : '';
+            if(in_array('menu-item-has-children', $item->classes)) {
+                $atts['class'] .= ' menu-item-has-children';
+            }
         }
         else {
-            $atts['class'] = 'bg-sky-lightest hover:bg-sky p-4 block whitespace-no-wrap';
+            $atts['class'] = 'bg-sky-lightest hover:bg-sky p-2 lg:p-4 block whitespace-no-wrap';
             $atts['class'] .= isset($this->styles['level-1-link']) ? ' ' . $this->styles['level-1-link'] : '';
 
         }

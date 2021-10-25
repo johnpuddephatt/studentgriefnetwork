@@ -2,7 +2,8 @@
 <section class="relative z-10 bg-birds">
   <div class="container py-24 mx-auto sm:py-36 md:pt-64 md:pb-96 md:-mb-36">
     <div class="pb-48 max-w-6">
-      <h2 class="mb-4 text-4xl font-bold leading-tight tracking-wide xl:text-5xl text-blue-dark font-kayaksans">Want to
+      <h2 class="mb-4 text-4xl font-bold leading-tight lg:tracking-wide xl:text-5xl text-blue-dark font-kayaksans">Want
+        to
         know
         more?
       </h2>

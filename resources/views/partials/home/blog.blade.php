@@ -8,7 +8,7 @@
       @while(have_posts()) @php(the_post())
       <div class="flex flex-col items-start col-span-3 space-y-2 lg:col-span-1">
         <a href="{{ get_permalink() }}" class="block">
-          {!! get_the_post_thumbnail(null, 'tall', ['class' => 'w-5/6 lg:w-full mb-6 block overflow-hidden shadow-sm'])
+          {!! get_the_post_thumbnail(null, 'tall', ['class' => 'w-full mb-6 block overflow-hidden shadow-sm'])
           !!}
         </a>
         <h2 class="text-xl font-bold font-kayaksans text-blue-dark md:text-2xl"><a href="{{ get_permalink() }}">{{

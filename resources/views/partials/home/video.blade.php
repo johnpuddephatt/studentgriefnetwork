@@ -1,12 +1,13 @@
 <!-- Section 1 -->
-<section class="relative">
-  <img class="parallax-single-birds absolute z-40 h-auto w-52 bottom-0 left-[37.5%]"
+<section class="relative pt-12 lg:pt-0">
+  <img
+    class="parallax-single-birds absolute z-40 h-auto w-40 lg:w-52 top-0 left-0 lg:top-auto lg:bottom-0 lg:left-[37.5%]"
     src="@asset('/images/home-video-single-bird.png')" />
-  <img class="absolute z-40 h-auto -right-16 top-32 parallax-two-birds w-72"
+  <img class="absolute z-40 hidden h-auto lg:block -right-16 top-32 parallax-two-birds w-72"
     src="@asset('/images/home-video-two-birds.png')" />
-  <div class="container flex items-center gap-8 py-12 mx-auto md:py-24">
+  <div class="container flex flex-col items-center gap-8 py-12 mx-auto lg:flex-row md:py-24">
 
-    <div class="relative w-1/2">
+    <div class="relative w-full lg:w-1/2">
       <a target="_blank" href="https://www.youtube.com/watch?v=jKcey1vF-Bg"
         class="block relative rounded-lg overflow-hidden bg-blue-lightest pt-[56.25%]">
         <img class="absolute inset-0" src="@asset('/images/video-still.jpg')" />
@@ -20,11 +21,12 @@
       </a>
 
     </div>
-    <div class="w-1/2 lg:pr-24">
-      <h2 class="mb-4 text-2xl font-bold leading-tight tracking-wide xl:text-3xl text-blue-dark font-kayaksans">We
+    <div class="lg:w-1/2 lg:pr-24">
+      <h2 class="mb-4 text-2xl font-bold leading-tight lg:tracking-wide xl:text-3xl text-blue-dark font-kayaksans">We
         strive to improve the experience
         of loss and grief for students</h2>
-      <p>The Student Grief Network strives to improve experiences of loss and grief in universities across the UK by
+      <p class="text-sm lg:text-base">The Student Grief Network strives to improve experiences of loss and grief in
+        universities across the UK by
         raising
         awareness and creating a range of avenues for support – from online resources and staff training to creative
         projects

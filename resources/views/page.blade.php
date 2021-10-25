@@ -12,14 +12,16 @@
 <header
     class=" min-h-[20em] container relative z-10 flex lg:flex-row flex-col-reverse items-end pt-32 mx-auto mb-8 lg:space-x-16 xl:space-x-24  lg:pt-40">
     <div class="max-x-2xl">
-        <h1 class="mb-16 text-5xl font-bold font-kayaksans text-blue-dark lg:text-5xl xl:text-6xl 2xl:text-7xl">{!!
+        <h1
+            class="mb-16 text-5xl font-bold lg:tracking-wide font-kayaksans text-blue-dark lg:text-5xl xl:text-6xl 2xl:text-7xl">
+            {!!
             get_the_title()
             !!}
         </h1>
         <div class="text-xl font-bold">{{ get_post()->post_excerpt }}</div>
 
     </div>
-    <div class="flex-none w-3/4 mb-12 lg:ml-auto lg:w-1/3 lg:mb-0">
+    <div class="flex-none mb-12 lg:ml-auto lg:w-1/3 lg:mb-0">
         {!! get_the_post_thumbnail(null, 'tall' ,[
         'class' => 'clip w-full h-auto torn-corner-' . (get_post()->ID % 3 + 1)
         ]) !!}

@@ -12,7 +12,8 @@
           &nbsp; {{ get_the_date() }}
         </time>
       </p>
-      <h1 class="mb-12 text-4xl font-bold lg:text-5xl entry-title xl:text-6xl 2xl:text-7xl font-kayaksans text-blue">
+      <h1
+        class="mb-12 text-4xl font-bold lg:tracking-wide lg:text-5xl entry-title xl:text-6xl 2xl:text-7xl font-kayaksans text-blue">
         {!! $title !!}
       </h1>
       @if($post->post_excerpt)

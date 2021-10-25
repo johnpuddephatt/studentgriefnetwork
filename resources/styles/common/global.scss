@@ -88,7 +88,10 @@ html {
 }
 
 .bg-birds {
-  background: center bottom / contain no-repeat url('../images/birds.png');
+  background: left bottom / contain no-repeat url('../images/birds.png');
+  @media screen and (orientation: portrait) {
+    background-size: 300%;
+  }
 }
 .footer-clip {
   width: 100%;
