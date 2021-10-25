@@ -72,16 +72,16 @@ html {
 }
 
 .wp-block-group.is-style-with-meditation {
-  @apply lg:pl-96 relative #{!important};
+  @apply md:pl-64 lg:pl-96 relative #{!important};
 
   &::after {
-    @apply w-96 h-full top-0 bg-center bg-contain bg-no-repeat -left-12 block absolute right-auto #{!important};
+    @apply lg:w-96 w-72 h-72 mx-auto md:mx-0 md:h-full top-0 bg-center bg-contain bg-no-repeat md:-left-12 block md:absolute right-auto #{!important};
     background-image: url(../images/Meditation_White.png);
     content: '';
   }
 
   &::before {
-    @apply w-60 h-60 -top-24 bg-center bg-contain bg-no-repeat -right-24 block absolute #{!important};
+    @apply hidden lg:block w-60 h-60 -top-24 bg-center bg-contain bg-no-repeat -right-24 block absolute #{!important};
     background-image: url(../images/bird-single.png);
     content: '';
   }
@@ -117,7 +117,7 @@ html {
 }
 
 .has-background {
-  @apply my-14 xl:my-28 rounded-3xl shadow-xl px-8 lg:px-16 py-8 lg:py-16 #{!important};
+  @apply my-20 xl:my-28 rounded-3xl shadow-xl px-8 lg:px-16 py-16 #{!important};
 
   figure {
     margin-top: 0;
