@@ -212,3 +212,10 @@ ul.wp-block-list > li {
   max-width: 50vw;
   margin: 1em 0;
 }
+
+@media screen and (max-width: 600px) {
+  .wp-block-media-text .wp-block-media-text__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
