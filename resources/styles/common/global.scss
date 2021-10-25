@@ -56,17 +56,14 @@ html {
   @apply lg:pr-48 relative #{!important};
 
   &::after {
+    @apply w-48 lg:w-72 h-48 lg:h-72 block absolute;
     background-image: url(../images/bird_box.png);
     background-size: contain;
     background-position: top right;
     background-repeat: no-repeat;
     content: '';
-    display: block;
-    height: 12em;
-    width: 12em;
-    position: absolute;
     top: -3em;
-    right: 0;
+    right: -3em;
     left: auto !important;
   }
 }
@@ -230,10 +227,6 @@ ul.wp-block-list > li {
       &::before {
         content: none !important;
       }
-    }
-
-    .blocks-gallery-item {
-      flex-grow: 0;
     }
   }
 }

@@ -48,10 +48,7 @@
         </article>
       </div>
     </div>
-    <div class="grid grid-flow-row-dense gap-4 mt-12 lg:gap-6 lg:grid-cols-2">
-      {{-- <div class="flex-col justify-center hidden col-span-2 row-span-2 pt-4 pb-8 text-lg lg:flex">
-        {!! get_queried_object()->post_content !!}
-      </div> --}}
+    <div class="grid grid-flow-row-dense grid-cols-1 gap-4 mt-12 lg:gap-6 lg:grid-cols-2">
 
       @while(have_posts()) @php(the_post())
       @php($index++)
