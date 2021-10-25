@@ -198,6 +198,12 @@ ul.wp-block-list > li {
   }
 }
 
+.wp-block-media-text.is-style-no-margin {
+  .wp-block-media-text__content {
+    padding: 0 !important;
+  }
+}
+
 .wp-block-gallery {
   display: block;
 
