@@ -2,7 +2,7 @@
 <section class="relative">
   <img class="parallax-single-birds absolute z-40 h-auto w-52 bottom-0 left-[37.5%]"
     src="@asset('/images/home-video-single-bird.png')" />
-  <img class="absolute top-0 z-40 h-auto parallax-two-birds w-72 right-16"
+  <img class="absolute z-40 h-auto -right-16 top-32 parallax-two-birds w-72"
     src="@asset('/images/home-video-two-birds.png')" />
   <div class="container flex items-center gap-8 py-12 mx-auto md:py-24">
 
@@ -20,7 +20,7 @@
       </a>
 
     </div>
-    <div class="w-1/2">
+    <div class="w-1/2 lg:pr-24">
       <h2 class="mb-4 text-2xl font-bold leading-tight tracking-wide xl:text-3xl text-blue-dark font-kayaksans">We
         strive to improve the experience
         of loss and grief for students</h2>

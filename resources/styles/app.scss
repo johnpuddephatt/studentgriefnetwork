@@ -30,12 +30,12 @@
 
   .parallax-two-birds {
     transform-origin: bottom right;
-    transform: translateZ(0.05px) scale(0.95);
+    transform: translateZ(-0.05px) scale(1.05);
   }
 
   .parallax-single-birds {
     transform-origin: bottom right;
-    transform: translateZ(0.03px) scale(0.97);
+    transform: translateZ(0.05px) scale(0.95);
   }
 }
 
