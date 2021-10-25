@@ -35,7 +35,7 @@ class Navwalker extends \Walker_Nav_Menu {
         }
         $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
         if($depth == 0) {
-            $class_names .= " group relative text-current  ";
+            $class_names .= " group relative text-current cursor-default  ";
         }
         $class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
        

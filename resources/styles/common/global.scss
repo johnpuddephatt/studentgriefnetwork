@@ -59,6 +59,7 @@ html {
     background-image: url(../images/bird_box.png);
     background-size: contain;
     background-position: top right;
+    background-repeat: no-repeat;
     content: '';
     display: block;
     height: 12em;
@@ -67,6 +68,16 @@ html {
     top: -3em;
     right: 0;
     left: auto !important;
+  }
+}
+
+.wp-block-group.is-style-with-meditation {
+  @apply lg:pr-96 relative #{!important};
+
+  &::after {
+    @apply w-96 h-full top-0 bg-center bg-contain bg-no-repeat -right-12 block absolute left-auto #{!important};
+    background-image: url(../images/Meditation_White.png);
+    content: '';
   }
 }
 
@@ -97,7 +108,7 @@ html {
 }
 
 .has-background {
-  @apply my-14 xl:my-28 rounded-3xl shadow-xl px-8 lg:px-16 py-8 #{!important};
+  @apply my-14 xl:my-28 rounded-3xl shadow-xl px-8 lg:px-16 py-8 lg:py-16 #{!important};
 
   figure {
     margin-top: 0;
@@ -123,7 +134,7 @@ html {
   margin-top: 0;
 }
 .prose .wp-block-quote {
-  @apply px-0 #{!important};
+  @apply text-xl px-0 #{!important};
 }
 
 .wp-block-quote.is-large p,

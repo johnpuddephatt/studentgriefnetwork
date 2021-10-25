@@ -9,6 +9,11 @@ domReady(() => {
     label: 'With birds',
   });
 
+  registerBlockStyle('core/group', {
+    name: 'with-meditation',
+    label: 'Meditation',
+  });
+
   registerBlockStyle('core/list', {
     name: 'pills',
     label: 'Pills',
