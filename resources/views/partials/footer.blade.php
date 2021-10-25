@@ -1,4 +1,4 @@
-<footer class="max-w-screen overflow-x-hidden relative text-center lg:text-left z-[-1]">
+<footer class="relative text-center lg:text-left z-[-1]">
   <img class="absolute bottom-0 left-0 w-[200%] lg:w-full z-[-1] max-w-none -right-96 "
     src="@asset('/images/gradient-mesh-2x.png')" />
   <div class="relative bg-opacity-50 lg:pt-24 text-blue footer-clip bg-blue-lighter lg:bg-white lg:bg-opacity-50 ">
