@@ -4,11 +4,11 @@
 
 @import 'common/global';
 
-* {
-  transform-style: preserve-3d;
-}
-
 @media screen and (min-width: 940px) {
+  #app * {
+    transform-style: preserve-3d;
+  }
+
   #app {
     width: 100%;
     max-height: 100vh;

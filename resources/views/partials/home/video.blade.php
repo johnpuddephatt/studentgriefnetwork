@@ -30,7 +30,7 @@
         projects
         and events.</p>
       <a href="/about"
-        class="inline-block px-4 py-3 mt-4 text-base font-semibold bg-white border-2 rounded-md border-blue-lighter text-blue-lighter">more
+        class="inline-block px-4 py-3 mt-6 text-base font-semibold bg-white border-2 rounded-md border-blue-lighter text-blue-lighter">more
         about us</a>
     </div>
 
