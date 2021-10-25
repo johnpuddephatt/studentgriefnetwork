@@ -132,7 +132,7 @@ ul.is-style-pills {
   @apply mt-8 grid grid-cols-1 lg:grid-cols-2 gap-4;
 
   li {
-    @apply bg-blue-lighter m-0 list-none bg-opacity-25 p-4 rounded-lg text-center;
+    @apply bg-blue-lighter m-0 list-none bg-opacity-10 p-4 rounded-lg text-center;
 
     &::before {
       content: none !important;
