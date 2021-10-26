@@ -112,7 +112,7 @@ $wp_customize->add_section(
         $wp_customize->add_control(
     'home_video_description',
     array(
-      'type' => 'text',
+      'type' => 'textarea',
       'label' => 'Description',
       'section' => 'home_video',
       'settings' => 'home_video_description',
