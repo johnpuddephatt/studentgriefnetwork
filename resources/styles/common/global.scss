@@ -218,6 +218,12 @@ ul.wp-block-list > li {
     }
   }
 
+  &.is-style-no-stretch {
+    .blocks-gallery-item {
+      flex-grow: none !important;
+    }
+  }
+
   .blocks-gallery-grid {
     padding: 0 !important;
     list-style-type: none;
@@ -227,6 +233,12 @@ ul.wp-block-list > li {
       &::before {
         content: none !important;
       }
+    }
+  }
+  .blocks-gallery-item {
+    img {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
     }
   }
 }

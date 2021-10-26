@@ -24,6 +24,11 @@ domReady(() => {
     label: 'Overlapping',
   });
 
+  registerBlockStyle('core/gallery', {
+    name: 'no-stretch',
+    label: 'No stretch',
+  });
+
   registerBlockStyle('core/media-text', {
     name: 'no-margin',
     label: 'No margin',
