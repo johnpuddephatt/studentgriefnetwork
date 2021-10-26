@@ -16,21 +16,23 @@
   clip-path: url(#torn-corner-3);
 }
 
-#app {
-  width: 100%;
-  max-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
 @media screen and (min-width: 940px) {
-  #app * {
-    transform-style: preserve-3d;
-  }
-
-  #app {
+  .parallax-container {
+    width: 100%;
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
     perspective: 1px;
     perspective-origin: 0 0;
+
+    * {
+      transform-style: preserve-3d;
+    }
+
+    .site-header {
+      transform: translateY(-8px) translateZ(0.13px) scale(0.87);
+      transform-origin: left;
+    }
   }
 
   .parallax-child {

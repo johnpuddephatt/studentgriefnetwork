@@ -5,7 +5,7 @@
 <section class="relative h-[110vh]">
   <div class="container relative z-10 flex flex-col justify-center h-screen space-y-8">
     <h1
-      class="max-w-5xl text-4xl font-bold leading-tight lg:mt-12 lg:mb-6 lg:tracking-wide lg:text-5xl xl:text-6xl 2xl:text-7xl text-blue-dark font-kayaksans">
+      class="max-w-5xl text-4xl font-bold leading-tight lg:-mt-8 lg:mb-0 lg:tracking-wide lg:text-5xl xl:text-6xl 2xl:text-7xl text-blue-dark font-kayaksans">
       {!! str_replace("|", "<br>", $siteStrapline) !!}
     </h1>
 

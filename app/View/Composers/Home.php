@@ -24,14 +24,18 @@ class Home extends Composer
     {
         return [
             'links' => $this->links(),
+            'video' => $this->video(),
         ];
     }
 
-    /**
-     * Returns the site name.
-     *
-     * @return string
-     */
+    public function video() {
+        $video = new \stdClass();
+            $video->link = get_theme_mod('home_video_link');
+            $video->title = get_theme_mod('home_video_title');
+            $video->description = get_theme_mod('home_video_description');
+            return $video;
+    }
+
     public function links()
     {
      return get_posts([

@@ -20,5 +20,5 @@ add_filter('excerpt_length', function($length) {
 });
 
 add_filter('body_class', function($classes) {
-    return array_merge($classes, ['overflow-x-hidden w-screen']);
+    return array_merge($classes, ['bg-white overflow-x-hidden w-screen']);
 });

@@ -50,9 +50,75 @@ add_action('customize_register', function (WP_Customize_Manager $wp_customize) {
         array(
             'transport' => 'refresh',
             'default' => '',
-          'sanitize_callback' => 'absint'
         )
     );
+
+$wp_customize->add_section(
+      'home_video',
+      array(
+          'title' => 'Video',
+          'description' => '',
+          'priority' => 15,
+          'panel'=>'home_panel',
+        )
+    );
+
+    $wp_customize->add_setting(
+        'home_video_link',        
+        array(
+            'transport' => 'refresh',
+            'default' => '',
+        )
+    );
+
+    $wp_customize->add_control(
+    'home_video_link',
+    array(
+      'type' => 'text',
+      'label' => 'Link',
+      'section' => 'home_video',
+      'settings' => 'home_video_link',
+    )
+    );
+
+    $wp_customize->add_setting(
+        'home_video_title',
+        
+        array(
+            'transport' => 'refresh',
+            'default' => '',
+        )
+    );
+
+    $wp_customize->add_control(
+    'home_video_title',
+    array(
+      'type' => 'text',
+      'label' => 'Title',
+      'section' => 'home_video',
+      'settings' => 'home_video_title',
+    )
+    );
+
+        $wp_customize->add_setting(
+        'home_video_description',
+        
+        array(
+            'transport' => 'refresh',
+            'default' => '',
+        )
+    );
+
+        $wp_customize->add_control(
+    'home_video_description',
+    array(
+      'type' => 'text',
+      'label' => 'Description',
+      'section' => 'home_video',
+      'settings' => 'home_video_description',
+    )
+    );
+
 
         $wp_customize->add_section(
       'social',

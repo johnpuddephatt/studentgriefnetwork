@@ -16,7 +16,7 @@
   {{ __('Skip to content') }}
 </a>
 
-<div class="relative parallax-container">
+<div class="relative @if(is_home()) parallax-container @endif">
   @include('partials.header')
 
   <main id="main" class="min-h-screen">
