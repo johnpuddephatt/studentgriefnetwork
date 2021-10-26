@@ -25,7 +25,7 @@ Template Name: Wide template
   </div>
   <div class="flex-none mb-12 lg:ml-auto lg:w-1/3 lg:mb-0">
     {!! get_the_post_thumbnail(null, 'tall' ,[
-    'class' => 'w-full h-auto torn-corner-' . (get_post()->ID % 3 + 1)
+    'class' => 'w-full h-auto torn-corner-' . (get_post()->ID % 2 + 1)
     ]) !!}
   </div>
 </header>
