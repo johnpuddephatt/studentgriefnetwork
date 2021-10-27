@@ -16,9 +16,13 @@
   clip-path: url(#torn-corner-3);
 }
 
+.parallax-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 @media screen and (min-width: 940px) {
   .parallax-container {
-    width: 100%;
     max-height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
