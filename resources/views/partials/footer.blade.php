@@ -6,7 +6,7 @@
     <div class="container py-16 pt-48 mx-auto lg:pb-6 lg:pt-32 max-w-none">
       <div class="flex flex-col gap-16 lg:gap-8 lg:flex-row">
         <div
-          class="flex-none flex-grow-0 flex-shrink w-full pt-8 pb-16 pl-6 mr-auto text-3xl font-bold text-center font-kayaksans footer-logo md:w-auto">
+          class="flex-none flex-grow-0 flex-shrink w-full pt-8 pb-16 pl-6 text-3xl font-bold text-center lg:mr-auto font-kayaksans footer-logo md:w-auto">
           <div class="inline-block w-48 pl-4 text-left text-blue-dark stroke">
             {{ $siteName }}
           </div>
@@ -18,7 +18,7 @@
           <p class="mb-12 text-xs lg:mb-6 company-info">{{ get_theme_mod('company_info') }}</p>
           @endif
 
-          <div class="flex justify-center space-x-1 md:justify-start md:space-x-3">
+          <div class="flex justify-center space-x-1 lg:justify-start md:space-x-3">
             @if(get_theme_mod('facebook'))
             <a rel="noopener" class="flex items-center justify-center w-10 h-10 p-2 text-[#c6cfe3] rounded-full bg-blue"
               aria-label="Facebook link" href="{{ get_theme_mod('facebook') }}" target="_blank">
@@ -62,7 +62,7 @@
 
         </div>
         @if(!empty($footerNavigation))
-        <div class="flex-shrink w-full lg:mt-6 md:-ml-6 lg:ml-0 xl:w-1/6 lg:w-1/5 md:w-1/2">
+        <div class="flex-shrink w-full mx-auto lg:mx-0 lg:mt-6 md:-ml-6 lg:ml-0 xl:w-1/6 lg:w-1/5">
           {!! $footerNavigation !!}
         </div>
         @endif
