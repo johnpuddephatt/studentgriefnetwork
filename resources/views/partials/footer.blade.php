@@ -62,7 +62,7 @@
 
         </div>
         @if(!empty($footerNavigation))
-        <div class="flex-shrink w-full mx-auto lg:mx-0 lg:mt-6 md:-ml-6 lg:ml-0 xl:w-1/6 lg:w-1/5">
+        <div class="flex-shrink w-full mx-auto lg:mx-0 lg:mt-6 lg:ml-0 xl:w-1/6 lg:w-1/5">
           {!! $footerNavigation !!}
         </div>
         @endif
