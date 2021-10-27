@@ -1,4 +1,4 @@
-<footer class="relative text-center lg:text-left">
+<footer class="relative text-center lg:text-left lg:z-[-1]">
   <img
     class="absolute bottom-0 right-0 transform translate-x-1/3 md:transform-none w-[550%] md:w-full z-[-1] max-w-none"
     src="@asset('/images/gradient-mesh-2x.png')" />
