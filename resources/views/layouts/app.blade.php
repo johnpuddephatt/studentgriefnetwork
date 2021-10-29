@@ -19,7 +19,7 @@
 <div class="relative @if(is_home()) parallax-container @endif">
   @include('partials.header')
 
-  <main id="main" class="min-h-screen">
+  <main id="main" class="relative min-h-screen lg:z-10">
     @yield('content')
   </main>
 
