@@ -31,7 +31,13 @@ html {
 }
 
 .stroke {
-  -webkit-text-stroke: 1.5px;
+  -webkit-text-stroke: 0.5px;
+  @media screen and (min-width: 800px) {
+    -webkit-text-stroke: 1px;
+  }
+  @media screen and (min-width: 1200px) {
+    -webkit-text-stroke: 1.5px;
+  }
 }
 
 .path {
