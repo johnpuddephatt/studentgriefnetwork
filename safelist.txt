@@ -5,3 +5,4 @@ max-w-sm
 focus:ring
 focus:ring-blue
 focus:ring-opacity-50
+shadow-none
