@@ -1,3 +1,7 @@
 -mt-36
 border-blue
 my-16
+max-w-sm
+focus:ring
+focus:ring-blue
+focus:ring-opacity-50
