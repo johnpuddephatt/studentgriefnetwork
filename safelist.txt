@@ -6,3 +6,5 @@ focus:ring
 focus:ring-blue
 focus:ring-opacity-50
 focus:shadow-none
+!focus:shadow-none
+!shadow-none
