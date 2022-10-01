@@ -10,11 +10,12 @@
     <h1
       class="lg:tracking-wide text-blue-dark font-kayaksans max-w-5xl text-4xl font-bold leading-tight lg:-mt-8 lg:mb-0 lg:text-5xl xl:text-6xl 2xl:text-7xl"
     >
-      {!! str_replace("|", "<br class="hidden md:block" />", $siteStrapline) !!}
+      {!! str_replace('|', '<br class="hidden md:block" />', $siteStrapline) !!}
     </h1>
 
     <div class="space-y-4">
       @foreach($links as $link)
+
 
       <div
         class="font-kayaksans text-blue w-64 border-b-2 border-white py-2 text-xl lg:w-auto lg:max-w-sm lg:text-2xl"
@@ -26,6 +27,7 @@
           <x-icon.arrow />
         </a>
       </div>
+
 
 @endforeach
     </div>
